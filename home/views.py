@@ -1,4 +1,7 @@
+
 from django.views.generic import TemplateView
+
+from web_site.settings import MEDIA_URL
 
 
 class Home(TemplateView):
@@ -10,5 +13,6 @@ class Home(TemplateView):
         context = super().get_context_data(**kwargs)
 
         context['title'] = 'DY home'
+        context['MEDIA_URL'] = MEDIA_URL
 
         return context
