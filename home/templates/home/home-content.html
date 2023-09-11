@@ -1,18 +1,35 @@
 {% extends 'home/base.html' %}
 {% load static %}
 
+{% block extra_css %}
+<link type="text/css" href="{% static 'home/css/home.css' %}" rel="stylesheet" />
+{% endblock %}
+
 {% block content %}
     <div class="zen-banner">
-        <video autoplay loop controls muted>
+        <video autoplay loop muted>
             <source src="{{ MEDIA_URL }}home/videos/The_Zen_of_Python.mp4" type="video/mp4">
         </video>
     </div>
 
 
-    <p>Hello world</p>
-    <p>{{ MEDIA_URL }}</p>
+    <div class="print-container">
+        <p id="print-element"></p>
+    </div>
+
     <label>
         <input type="checkbox" id="rainbow-toggle">
-        "Activate background rainbow mode 🌈"
+        <--- 🌈
     </label>
+
+    <h1>DY production</h1>
+
+    <p>Hey, my name is Arkasha, and I usually tag myself as DY. I am currently working as Python developer. In a nutshell, this is how I became one:</p>
+
+    <img src="{{ MEDIA_URL }}home/images/how_i_got_here.png" class="std-img"></image>
+
+    <h2>Motorcycle 🏍️</h2>
+
+    <script src="{% static 'home/js/utils.js' %}"></script>
+    <script src="{% static 'home/js/text_typing.js' %}"></script>
 {% endblock %}

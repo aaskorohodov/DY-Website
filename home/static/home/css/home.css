@@ -1,0 +1,17 @@
+.zen-banner{
+    width: min(900px,100%);
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.zen-banner video {
+    width: 100%;
+}
+
+.print-container {
+    min-height: 100px;
+}
+
+.std-img {
+    width: 100%;
+}
