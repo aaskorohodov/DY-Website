@@ -1,0 +1,17 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="zen-banner">
+        <video autoplay loop controls muted>
+            <source src="{{ MEDIA_URL }}home/videos/The_Zen_of_Python.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <p>Hello world</p>
+    <label>
+        <input type="checkbox" id="rainbow-toggle">
+        "Activate background rainbow mode 🌈"
+    </label>
+{% endblock %}

@@ -18,13 +18,11 @@
 
 
 <body>
-    <div class="container">
-        <p>Hello world</p>
-        <label>
-            <input type="checkbox" id="rainbow-toggle">
-            "Activate background rainbow mode 🌈"
-        </label>
-    </div>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
 
     <div id="bg-grid" aria-hidden="true" class="bg-grid">
 	    <div class="bg-grid-el"></div>
