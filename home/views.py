@@ -16,3 +16,17 @@ class Home(TemplateView):
         context['MEDIA_URL'] = MEDIA_URL
 
         return context
+
+
+class ContentManager(TemplateView):
+    """Content-manager page"""
+
+    template_name = 'home/content-manager.html'
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        context['title'] = 'Content-Manager'
+        context['MEDIA_URL'] = MEDIA_URL
+
+        return context

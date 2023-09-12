@@ -7,3 +7,7 @@ function getRandomFromArray(array) {
     let randomNumber = array[randomIndex];
     return randomNumber;
 };
+
+async function sleep(mlSeconds) {
+    return new Promise(resolve => setTimeout(resolve, mlSeconds));
+};

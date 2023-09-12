@@ -1,0 +1,94 @@
+main {
+    font-family: IBM Plex Mono,monospace,sans-serif;
+    margin: 0 auto;
+    padding: 0 20px 20px;
+    max-width: 1200px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.banner-img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.banner-holder {
+    width: 100%;
+    height: 459.3px;
+    margin-top: 50px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 20px 20px;
+    max-width: 800px;
+}
+
+.banner-text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 1s;
+    left: 50%;
+    top: 35%;
+}
+
+.main-content {
+    opacity: 0;
+    transition: opacity 1s;
+    margin-top: 20vh;
+}
+
+.std-img {
+    width: 95vw;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.screenshot {
+    width: 95vw;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    border: 2px solid;
+    border-color: black;
+}
+
+.vertical-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adjust spacing between images */
+    max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+    margin-bottom: 40px;
+}
+
+.vertical-img-container img {
+    flex: 1; /* Allow images to expand to fill available space */
+    width: 100%;
+    height: auto;
+    max-width: calc(33.33% - 7px); /* Adjust the width of each image (1/3 of container minus spacing) */
+}
+
+.vertical-img-container img:last-child {
+    margin-right: 0;
+}
+
+.image-text {
+    text-align: center;
+}
+
+ul {
+    margin-bottom: 30px;
+}

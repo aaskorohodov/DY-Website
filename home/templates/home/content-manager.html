@@ -1,0 +1,103 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ title }}</title>
+
+    <link type="text/css" href="{% static 'home/css/content-manager.css' %}" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <main>
+        <div class="banner-holder">
+            <img id="banner-img" src="{{ MEDIA_URL }}home/images/content-manager/content-design-logo.jpg" class="banner-img"></image>
+            <div id="banner-text" class="banner-text"></div>
+        </div>
+
+        <div id="main-content" class="main-content">
+
+            <h2>What is a photo?</h2>
+
+            <p class="image-text">How do you define a good image? What is a great photo? Is it something small?</p>
+            <img src="{{ MEDIA_URL }}home/images/content-manager/small_ant.jpg" class="std-img"></image>
+
+            <p class="image-text">Or is it something big?</p>
+            <img src="{{ MEDIA_URL }}home/images/content-manager/big_forest.jpg" class="std-img"></image>
+
+            <p class="image-text">Or maybe its about consistency and repetitive patterns?</p>
+            <div class="vertical-img-container">
+                <img src="{{ MEDIA_URL }}home/images/content-manager/cristmas_ball_1.jpg" class="vertical-img-nested"></image>
+                <img src="{{ MEDIA_URL }}home/images/content-manager/cristmas_ball_2.jpg" class="vertical-img-nested"></image>
+                <img src="{{ MEDIA_URL }}home/images/content-manager/cristmas_ball_3.jpg" class="vertical-img-nested"></image>
+            </div>
+
+            <p class="image-text">Or does an image should simply tell a story?</p>
+            <img src="{{ MEDIA_URL }}home/images/content-manager/walking_in_a_mud.jpg" class="std-img"></image>
+
+            <p class="image-text">Should it be something bright?</p>
+            <img src="{{ MEDIA_URL }}home/images/content-manager/dragonfly.jpg" class="std-img"></image>
+
+            <p class="image-text">Or maybe dark?</p>
+            <div class="vertical-img-container">
+                <img src="{{ MEDIA_URL }}home/images/content-manager/dark_1.jpg" class="vertical-img-nested"></image>
+                <img src="{{ MEDIA_URL }}home/images/content-manager/dark_2.jpg" class="vertical-img-nested"></image>
+            </div>
+
+            <p>I had no idea, but was passion with making photos. So I got a job to do so, and they were even paying me money!</p>
+
+            <h2>Content-Manager</h2>
+            <p>I have started with a very poorly-designed web-site with randomly made content. This is how it was:</p>
+            <img src="{{ MEDIA_URL }}home/images/content-manager/bad_design_1.png" class="screenshot"></image>
+
+            <p>So i made several improvements!</p>
+            <img src="{{ MEDIA_URL }}home/images/content-manager/good_design_2.png" class="screenshot"></image>
+
+            <p>You may not be too familiar with what content-managers doing, when having a huge amount of images to process, so let me explain, focusing
+                specifically on images:
+            </p>
+            <ul>
+                <li>Standardization: all images got consistent style</li>
+                <li>Brightness: all images become about the same brightness</li>
+                <li>Positioning: all items got the same angle</li>
+                <li>Watermark: I made it less visible and set fixed size for it</li>
+                <li>Colors: color-balance, hue and white-balance got standardized</li>
+            </ul>
+
+            <p style="text-align: center;">Take a look at this section. It might not be much, but there is a common style in colors, fonts and elements:</p>
+            <img src="{{ MEDIA_URL }}home/images/content-manager/overall_design.png" class="screenshot"></image>
+            
+            <p>I like standardization and experimenting! So I was trying a lot to find a style, that fits great for this products, clients and company 
+            in general. During my work there, I created style-guides, that were describing all the possible products, and all of the aspect about 
+            ho to:</p>
+
+            <ul>
+                <li>Take photos: which products should have which angles</li>
+                <li>Set lightning: how to set light in a studio</li>
+                <li>Camera: what kind of camera and lenses to use</li>
+                <li>Description: how should product's descriptions be written</li>
+                <li>Tools: which software to use, to handle photo-editing</li>
+                <li>Adds and news: how to write news, adds and any other texts</li>
+            </ul>
+
+            <p>Being passion about the work I was doing let us, at that time, to become the best Vape-Shop on the market, with the best content 
+                that was admired by many-many clients. We were expanding, so was my department too, and at the end I got several colleagues to teach
+                how to handle the content.
+            </p>
+
+        </div>
+        
+    </main>
+
+    <script src="{% static 'home/js/utils.js' %}"></script>
+    <script src="{% static 'home/js/banner-text.js' %}"></script>
+
+</body>
+</html>

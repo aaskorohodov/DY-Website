@@ -2,6 +2,7 @@
     width: min(900px,100%);
     overflow: hidden;
     pointer-events: none;
+    margin-top: 20px;
 }
 
 .zen-banner video {
@@ -15,3 +16,53 @@
 .std-img {
     width: 100%;
 }
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.pornhub-style-background {
+    font-family: sans-serif;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    padding: 7px;
+}
+
+.pornhub-hub {
+    background-color: #f79a24;
+    border-radius: 3px;
+    font-weight: bold;
+    color: black;
+    padding: 3px;
+}
+
+/* .pornhub-style {
+    display: block;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 9vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .pornhub-style span:nth-child(2) {
+    background: #FF9900;
+    color: #000000;
+    border-radius: 1vw;
+    padding: 0 1vw 1vw 1vw;
+    display: inline-block;
+  } */
