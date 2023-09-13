@@ -17,6 +17,11 @@
     width: 100%;
 }
 
+.inline-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
 .floating-img-container {
     position: relative;
 }
@@ -37,6 +42,23 @@
     right: -10%;
     top: -50px;
     transform: rotate(50deg);
+}
+
+.floating_image_arrow_right {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    right: -8%;
+    top: -250px;
+}
+
+.arrow_right_text {
+    position: absolute;
+    color: blue;
+    right: -28%;
+    top: -250px;
+    transform: rotate(60deg);
+    font-size: 25px;
 }
 
 h1 {
@@ -77,21 +99,87 @@ h3 {
     padding: 3px;
 }
 
-/* .pornhub-style {
-    display: block;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 9vw;
+.arrows_2_container {
+    position: relative;
+}
+
+.arrows_2 {
+    width: 282px;
+    height: auto;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .pornhub-style span:nth-child(2) {
-    background: #FF9900;
-    color: #000000;
-    border-radius: 1vw;
-    padding: 0 1vw 1vw 1vw;
-    display: inline-block;
-  } */
+    right: 50%;
+    top: 164px;
+}
+
+.arrows_2_text_1 {
+    position: absolute;
+    color: blue;
+    right: 50%;
+    top: 138px;
+    font-size: 25px;
+}
+
+.arrows_2_text_2 {
+    position: absolute;
+    color: blue;
+    right: 62%;
+    top: 260px;
+    font-size: 25px;
+}
+
+.row-images-container_2 img {
+    flex: 1; /* Allow images to expand to fill available space */
+    width: 100%;
+    height: auto;
+    max-width: calc(50% - 10px); /* Adjust the width of each image (1/3 of container minus spacing) */
+}
+
+.row-images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adjust spacing between images */
+    max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+    margin-bottom: 40px;
+}
+
+.row-images-container img {
+    flex: 1; /* Allow images to expand to fill available space */
+    width: 100%;
+    height: auto;
+    max-width: calc(50% - 10px); /* Adjust the width of each image (1/3 of container minus spacing) */
+}
+
+.button {
+    width: 100px;
+}
+
+.link_social {
+    text-decoration: none;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.email {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.footer {
+    margin-top: 50px;
+    background-color: #c7c7c7;
+    padding: 15px;
+}
+
+.table-of-contents {
+    list-style-type: none;
+}
+
+.table-of-contents a {
+    text-decoration: none;
+}
