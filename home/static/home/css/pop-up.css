@@ -1,0 +1,49 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Style for the pop-up content */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.popupContent p {
+    text-align: center;
+}
+
+.warning {
+    animation: blinker 1.5s linear infinite;
+    color: red;
+    font-family: sans-serif;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Style for the close button */
+.close {
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    cursor: pointer;
+}

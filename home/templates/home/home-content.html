@@ -3,6 +3,7 @@
 
 {% block extra_css %}
 <link type="text/css" href="{% static 'home/css/home.css' %}" rel="stylesheet" />
+<link type="text/css" href="{% static 'home/css/pop-up.css' %}" rel="stylesheet" />
 {% endblock %}
 
 {% block content %}
@@ -33,6 +34,10 @@
 
     <h2>Content-manager</h2>
 
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/gimp_logo.png" class="floating_image_left"></image>
+    </div>
+
     <p>
         I was working in <a href="https://zenmod.shop/" target="_blank">Zenmod</a> for more than 4 years, starting as Content-manager. 
         Check out <a href="/content-manager" target="_blank">what I was doing</a> there in details, but in general:
@@ -45,21 +50,41 @@
         <li>Took a big part in crating overall design to be client-friendly</li>
     </ul>
 
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/photoshop_logo.png" class="floating_image_right"></image>
+    </div>
+
     <p>This was the first time I made myself familiar with HTML on business-purposes. It was fun, at first I was creating my own designs 
         for descriptions, blogs and other stuff, using OpenCards build-in functionality, and later these attempts were converted into a real
         design, integrated into own updated web-shop, merch and real-life shops.
     </p>
+
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/html_logo.png" class="floating_image_left"></image>
+    </div>
     
     <h2>SEO</h2>
+
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/git_logo.png" class="floating_image_right"></image>
+    </div>
 
     <p>At some point, when I got my whole department with several people, who started doing my job (creating content), I was pushed into new area - 
         Search Engine Optimization. I was working with a lot of new tools, like B1, Yandex WordStat, different key-collectors and text-analyzers.
     </p>
 
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/python_logo.png" class="floating_image_left"></image>
+    </div>
+
     <p>It was a lot of fun, I even took a whole-year courses to become a professional SEO, but there was a catch - all automatic tools were not doing 
         exactly what I needed... SO I started building my own ones! This was the time, when I started diving into Python, as I was already familiar with it 
         and its syntax was pretty easy to work with.
     </p>
+
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/trello_logo.png" class="floating_image_right"></image>
+    </div>
 
     <p>Was that SEO good? Hell yeah it was! If you are familiar with Vaping and live in Russia, than you do know what Zenmod is, and had probably 
         used our web-site to buy stuff. At the point, when we were developing our web-sites, it was the most used one in Russia. If you are familiar with
@@ -67,7 +92,11 @@
         many people involved, but the passion with consistency brought us hight.
     </p>
 
-    <h2>Python</h2>
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/planfix_logo.png" class="floating_image_left"></image>
+    </div>
+
+    <h2>Programming</h2>
 
     <p>After Vaping started experience a huge pressure from government, there was no need in SEO anymore, as the company faced a lot of restriction
         in online marketing. And this is I got into new area - programming!
@@ -75,12 +104,37 @@
 
     <p>There is not much I can share, because most of the project I was working on are private, but I can tell you about some!</p>
 
+    <h3>Python</h3>
+
+    <p>I'm mostly working with Python 3 on daily-basis, and I love it! I've seen some other languages, for example AutoIt, JS and C, but 
+        all the concepts, ideas and spirits, that Python is based on, clicked in my heart much more. 
+    </p>
+
+    <h3>JavaScript</h3>
+
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/js_logo.png" class="floating_image_left"></image>
+    </div>
+
+    <p>For a long time I was trying to call JS simply 'Java')), but now I know. I don't have too much experience with this language, but I can 
+        write a thing or two in it. I would like to get my hands on TypeScript, cause compare to Python, JS is a bit less clear, especially when it comes 
+        to type-annotations.
+    </p>
+
     <h3>YOLO</h3>
+
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/yolo_logo.png" class="floating_image_right"></image>
+    </div>
 
     <p>YOLO is a neural network, that can identify people, objects and traffic on still-images and it does it really fast. By using a single about-modern 
         GPU, YOLO can come with about 60 frames per second. Nice, write? Well, the downside is that it can not track objects from image to image, it treats
         each one as a completely new data. This is where I come in!
     </p>
+
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/ml_logo.png" class="floating_image_left"></image>
+    </div>
 
     <p>Working with YOLO was my biggest project, while I was working in <a href="https://motionlogic.ru/" target="_blank">MotionLogic</a>. My goal was
         to create a service, that could automatically download a video from public cameras, analyze the number of traffic and people on it, 
@@ -88,26 +142,98 @@
         of visual-adds in any city, and the traffic is the most important part.
     </p>
 
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/docker_logo.png" class="floating_image_right"></image>
+    </div>
+
     <p>So, my goal was to create such a service, that could understand raw-data from YOLO, and track objects from one image to the other. It was designed 
         to be used for operators, who would set lines in a video, and each car or human, that would cross this line, would be counted. The most 
     challenging part was to make this service remember each car or a person, so that they won't be counted several times.</p>
+
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/pandas_logo.png" class="floating_image_left"></image>
+    </div>
 
     <p>This was the time, when I discovered things like Docker, Docker-compose, Pandas and all the instruments of Atlassian. I started building more complex and 
         completed picture about how CI/CD works in general, how programs interact with each other, send data and how different technologies can work
         together, to create a single Application. It was fun, and pretty challenging.
     </p>
 
+
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/atlassian_logo.png" class="floating_image_right"></image>
+    </div>
+
     <h3>Telegram-bots</h3>
     
-    <p>Wanna see <span class="pornhub-style-background">some <span class="pornhub-hub">nasty</span></span> content? NSFW, adults only, 18+?</p>
+    <p>Wanna see <button id="season-3-bot" class="pornhub-style-background">some <span class="pornhub-hub">nasty</span></button> content? NSFW, adults only, 18+?</p>
     
-    <p>Well, I have some for you, <a href="">if you dare</a>. Unfortunately, this is the only publicly-available Telegram-Bot that I have running, but 
+    <p>Well, I have some for you, if you dare. Unfortunately, this is the only publicly-available Telegram-Bot that I have running, but 
     I was building a lot of them. I like placing one into almost any app I make, because this is a very simple way to set a communication for 
     any User. They allow you to check what is going on with your app and manage it from wherever you are.
     </p>
 
-    <h2>Motorcycle 🏍️</h2>
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/pytelegram_logo.png" class="floating_image_left"></image>
+    </div>
 
-    <script src="{% static 'home/js/utils.js' %}"></script>
-    <script src="{% static 'home/js/text_typing.js' %}"></script>
+    <h3>PyQt</h3>
+
+    <p>Using Python to create desktop-application as a big pain in the ass, but still, if you need, there are not too many options. PyQt is one 
+        of them, the most powerful I've seen. I've being using it a lot to create something, to let Users control Server-applications or something
+        less advanced.
+    </p>
+
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/pyqt_logo.png" class="floating_image_right"></image>
+    </div>
+
+    <h3>Django and Flask</h3>
+
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/django_logo.png" class="floating_image_left"></image>
+    </div>
+
+    <p>Django was the first FrameWork that I took my hands on. At the time it was a lot confusing, because it uses Python in a bit different way, 
+        well, as any FrameWork does. Still I like it, its DB-mapping, integrated JINJA and other stuff. A bit too complicated, but in a need of something 
+        smaller - there is always the Flask.
+    </p>
+
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/flask_logo.png" class="floating_image_right"></image>
+    </div>
+
+    <h3>IDEs</h3>
+
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/pycharm_logo.png" class="floating_image_left"></image>
+    </div>
+
+    <p>When working with code, I do always prefer to make as much as possible with IDE. If IDE can create your venv - do so, if IDE can connect to a DB - 
+        use it, if IDE can install your libraries - why not?. When working with Python, I prefer to use PyCharm (community or professional) or Jupiter, with 
+        JS I've tried SubLime, but stick to the VS Code. I'm not the one, who like working in text-editors, because programming itself is automatization, 
+        so why not automate the process of writing code as well.
+    </p>
+
+    <div class="floating-img-container">
+        <img src="{{ MEDIA_URL }}home/images/vscode_logo.png" class="floating_image_right"></image>
+    </div>
+
+    <h3>How to code</h3>
+
+    <p>I have a small -><a href="https://github.com/aaskorohodov/aaskorohodov">style-guide</a><-, if you are interested, and I like to catalogue <br>
+        -><a href="https://github.com/aaskorohodov/Modules">my knowledge and stuff I faced</a><- here. Its always a good idea to write down all the stuff, 
+        that you can eventually come beck to.
+    </p>
+    <p>O, and BTW, -><a href="https://github.com/aaskorohodov/HardSkills">here are some examples</a><- of the way I interpret SOLID.</p>
+    
+    <h2>Other stuff</h2>
+
+    <h3>Motorcycle 🏍️</h3>
+
+    <p>I do like riding a motorcycle! Not not simply riding it, but as well building and modifying it!</p>
+
+    <script src="{% static 'home/js/utils.js' %}" defer></script>
+    <script src="{% static 'home/js/text_typing.js' %}" defer></script>
+    <script src="{% static 'home/js/pop-up.js' %}" defer></script>
 {% endblock %}
