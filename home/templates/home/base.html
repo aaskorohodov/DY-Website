@@ -20,11 +20,6 @@
 
 <body>
 
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
-
     <!-- The pop-up (modal) -->
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -33,6 +28,13 @@
             <!-- You can add any content you want to display in the pop-up -->
         </div>
     </div>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+
 
     <div id="bg-grid" aria-hidden="true" class="bg-grid">
 	    <div class="bg-grid-el"></div>

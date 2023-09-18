@@ -15,12 +15,21 @@ function openPopUp() {
     `
     popupContent.innerHTML = content;
     document.getElementById("myModal").style.display = "block";
+    setPosition('unset');
 };
 
 function closePopUp() {
     let popupContent = document.getElementById("popupContent");
     popupContent.innerHTML = '';
     document.getElementById("myModal").style.display = "none";
+    setPosition('relative');
+};
+
+function setPosition(property) {
+    let mainULandP = document.querySelectorAll('main ul, main p');
+    mainULandP.forEach(element => {
+        element.style.position = property
+    });
 };
 
 connectPopUp();
