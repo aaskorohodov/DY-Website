@@ -9,7 +9,13 @@ async function bannerTextCreator() {
     for (let i = 0; i < bannerText.length; i++) {
         let symbol = bannerText[i];
         currentText += symbol;
-        await sleep(50);
+
+        if (symbol == '.') {
+            await sleep(150);
+        }
+        else {
+            await sleep(50);
+        };
         bannerTextEl.textContent = currentText;
     };
 

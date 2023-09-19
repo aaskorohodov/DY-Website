@@ -157,6 +157,7 @@ h3 {
 
 .button {
     width: 100px;
+    max-width: 20vw;
 }
 
 .link_social {
@@ -177,7 +178,7 @@ h3 {
 
 .footer {
     margin-top: 50px;
-    background-color: #c7c7c7;
+    background-color: #00000042;
     padding: 15px;
 }
 
